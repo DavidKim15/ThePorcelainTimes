@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.davidkim.theporcelaintimes.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!
+\nWe will be providing articles based off of your interests!\nSo take the time to choose your interest(s)."
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick = "confirmInterest" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/listView">
+
+            <CheckBox
+                android:text="Architecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/architectureBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Art"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/businessBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/educationBox"
+                android:layout_below="@+id/scienceBox" />
+
+            <CheckBox
+                android:text="Entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/entertainmentBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Fashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fashionBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Finances"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/financesBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/healthBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/musicBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Politics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/politicsBox"
+                android:layout_below="@+id/educationBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:text="Science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scienceBox"
+                android:layout_below="@+id/politicsBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:text="Sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sportsBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/technologyBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="Travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/travelBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:text="World"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/worldBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
